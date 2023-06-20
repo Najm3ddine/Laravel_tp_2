@@ -1,4 +1,4 @@
-@extends('layout/app');
+@extends('layouts/app');
 @section('title', "Etudiants")
 @section('titleHeader','Etudiant')
 

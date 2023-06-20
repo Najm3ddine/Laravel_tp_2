@@ -1,18 +1,18 @@
-@extends('layout/app');
+@extends('layouts/app');
 @section('title', config('app.name'))
-@section('titleHeader', config('app.name'))
+@section('titleHeader',  __('lang.students_show'))
 
 @section('content')
     <div class="row">
     <div class="col text-end">
-        <a href="{{route('etudiants.create')}}" class="btn btn-outline-primary btn sm mt-4 mb-3">Ajouter un nouveau etudiant</a>
+        <a href="{{route('etudiants.create')}}" class="btn btn-outline-primary btn sm mt-4 mb-3">@lang('lang.add_student')</a>
     </div>
 </div>
 <div class="row">
     <div class="col-12">
         <div class="card">
             <div class="card-header">
-                <h4>Liste des etudiants</h4>
+                <h4>@lang('lang.students_list')</h4>
             </div>
             <div class="card-body">
                 <ul>
